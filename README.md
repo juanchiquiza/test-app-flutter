@@ -1,5 +1,5 @@
 # test_app
-se deben correr los siguienets comandos:
+Se deben correr los siguientes comandos:
 flutter pub get
 flutter pub run build_runner build --delete-conflicting-outputs
 flutter run
