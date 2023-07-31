@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '/movies/presentation/widgets/item_list.dart';
-import '/movies/presentation/widgets/loading_albums_list_widget.dart';
+import '/movies/presentation/widgets/loading_movies_list_widget.dart';
 import '/movies/application/providers/movies/movies_providers.dart';
 import '/movies/presentation/widgets/retry_column.dart';
 
-/// Widget that Album List
+/// Widget that Movie List
 class MoviesListWidget extends ConsumerStatefulWidget {
   ///Constructor
   const MoviesListWidget({super.key});
 
   @override
-  ConsumerState createState() => _AlbumListWidgetState();
+  ConsumerState createState() => _MoviesListWidgetState();
 }
 
-class _AlbumListWidgetState extends ConsumerState<MoviesListWidget> {
+class _MoviesListWidgetState extends ConsumerState<MoviesListWidget> {
   @override
   void initState() {
     super.initState();
@@ -44,7 +44,7 @@ class _AlbumListWidgetState extends ConsumerState<MoviesListWidget> {
       ),
       loading: () => SizedBox(
         height: MediaQuery.of(context).size.height * 0.9,
-        child: const LoadingAlbumsListWidget(),
+        child: const LoadingMoviesListWidget(),
       ),
       data: (data) {
         return SizedBox(

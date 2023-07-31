@@ -4,10 +4,10 @@ import 'package:shimmer/shimmer.dart';
 import '/core/presentation/styles/colors_app.dart';
 import '/core/presentation/styles/shadow_styles.dart';
 
-/// Loading Albums list
-class LoadingAlbumsListWidget extends StatelessWidget {
+/// Loading Movies list
+class LoadingMoviesListWidget extends StatelessWidget {
   /// Constructor
-  const LoadingAlbumsListWidget({super.key});
+  const LoadingMoviesListWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

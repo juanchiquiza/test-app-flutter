@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '/movies/domain/entities/movie.dart';
 
-/// Item List for Albums
+/// Item List for Movies
 class ItemList extends StatelessWidget {
   /// Constructor
   const ItemList({

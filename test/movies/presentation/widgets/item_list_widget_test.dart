@@ -1,21 +1,19 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
-import 'package:test_app/albums/domain/entities/album.dart';
-import 'package:test_app/albums/presentation/widgets/item_list.dart';
+import 'package:test_app/movies/domain/entities/movie.dart';
+import 'package:test_app/movies/presentation/widgets/item_list.dart';
+
 import '../../../fixture/fixture.dart';
 
 void main() {
-  group('AlbumListWidget', () {
+  group('MoviesListWidget', () {
     const titleText = 'test';
-    const album = Album(
+    const movie = Movie(
       id: 1,
-      albumId: 2,
-      title: 'test',
-      thumbnailUrl: 'thumbnailUrl',
-      url: 'url',
+      name: 'test',
     );
-    const testNormalWidget = ItemList(album: album);
+    const testNormalWidget = ItemList(movie: movie);
 
     testWidgets('Should render correctly', (tester) async {
       // arrange

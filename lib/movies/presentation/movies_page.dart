@@ -9,10 +9,10 @@ class MoviesPage extends ConsumerStatefulWidget {
   const MoviesPage({Key? key}) : super(key: key);
 
   @override
-  ConsumerState<MoviesPage> createState() => _AlbumsPageState();
+  ConsumerState<MoviesPage> createState() => _MoviesPageState();
 }
 
-class _AlbumsPageState extends ConsumerState<MoviesPage> {
+class _MoviesPageState extends ConsumerState<MoviesPage> {
   @override
   void initState() {
     super.initState();

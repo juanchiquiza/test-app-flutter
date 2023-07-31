@@ -15,7 +15,7 @@ extension MapperMovieDTO on MovieDTO {
 
 /// With this mapper, we can convert a Data Transfer Object to an Entity
 extension MapperThumbnailDTO on MovieThumbnailDTO {
-  /// [AlbumDTO] (Infrastructure) to [Album] (Domain)
+  /// [MovieDTO] (Infrastructure) to [Movie] (Domain)
   MovieThumbnail toDomain() => MovieThumbnail(
         extension: extension,
         path: path,

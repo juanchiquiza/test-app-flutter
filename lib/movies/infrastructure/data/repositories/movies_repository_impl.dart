@@ -7,7 +7,7 @@ import '/core/shared/constants.dart';
 import '/movies/infrastructure/mapper/mapper_domain.dart';
 import '/core/domain/failures/common_failure.dart';
 
-/// This is the implementation of our [AlbumsRepository]
+/// This is the implementation of our [MoviesRepository]
 class MoviesRepositoryImpl implements MoviesRepository {
   /// Constructor
   const MoviesRepositoryImpl(this._moviesDataSource);
